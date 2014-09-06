@@ -1,0 +1,28 @@
+name:           structured-matrix
+version:        0.1.0.0
+-- synopsis:
+-- description:
+license:        BSD3
+license-file:   LICENSE
+author:         Fergus Noble
+maintainer:     fergusnoble@gmail.com
+copyright:      (c) Fergus Noble, 2014
+category:       Math
+build-type:     Simple
+cabal-version:  >=1.10
+
+library
+  exposed-modules:   Numeric.StructuredMatrix,
+                     Numeric.StructuredMatrix.SMatrix,
+                     Numeric.StructuredMatrix.PrettyPrint
+  -- other-modules:
+
+  other-extensions:  FlexibleInstances,
+                     DataKinds,
+                     KindSignatures
+
+  build-depends:     base >=4.6 && <4.7,
+                     hmatrix >=0.15 && <0.16,
+                     boxes >=0.1 && <0.2
+
+  default-language:  Haskell2010
